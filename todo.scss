@@ -1,0 +1,236 @@
+
+$list:320px 360px 412px 424px;
+*{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 14px;
+     background: #37AFBF;
+    font-family: "苹方";
+}
+.icon{
+    font-family: 'iconfont'!important;
+}
+
+$design-size:750px;
+@each $w in $list {
+    @media screen and (min-width:#{$w}) {
+      html{
+          font-size: 100px*$w/$design-size;
+      }  
+    }
+}
+@mixin shuru{
+     padding-left:0.2rem;
+      background: rgba(0,0,0,0.001);
+      outline: none;
+       box-sizing: border-box;
+}
+.heard{
+    width: 100%;
+    height: 1rem;
+    border-bottom: 1px dashed #999;
+    position: relative;
+    line-height: 1rem;
+   span{
+       font-size: 0.5rem;
+       color: #fff;
+       padding-left: 0.5rem;
+       padding-right: 0.5rem;
+   }
+   span:nth-of-type(1){
+       float: left;
+       
+   }
+   
+   span:nth-of-type(2){
+       float: right;
+   }
+   .jiantou-s{
+       display: none;
+       position: absolute;
+       top: 35%;
+       left: 0.1rem;
+       span{
+           color: #FFF;
+            font-size: 0.2rem;
+           transform: rotate(180deg);
+       }
+       
+   }
+   .zhuangtai{
+       display: none;
+       width: 2rem;
+       height: 3rem;
+       color: #fff;
+       position: absolute;
+       top: 85%;
+       left: 0.3rem;
+       border-radius:5px ;
+       background: #fff;
+       li{
+            margin-left: 0.2rem;
+            width: 80%;
+            height: 25%;
+            border-bottom: 1px dashed #37AFBF;
+            
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                line-height:34px;
+                text-decoration: none;
+                color: #888;
+            }
+       }
+       .last{
+           border: 0;
+       }
+   }
+}
+.date{
+    margin-top: 0.2rem;
+     padding-left: 0.5rem;
+     padding-right: 0.5rem;
+      color: #fff;
+      font-size: 0.5rem;
+      span{
+           font-size: 0.5rem;
+       color: #fff;
+      
+      }
+     input{
+        @include shuru;
+          width: 40px;
+          height: 40px;
+          color: #fff;
+          font-size: 0.5rem;
+         
+          
+     }
+     input:nth-of-type(1){
+         width: 70px;
+     }
+}
+.tanchuang{
+    position: fixed;
+    bottom: 1.3rem;
+    left: 1%;
+    z-index: 222;
+    display: none;
+    ul{
+        height: 3rem;
+        width: 110%;
+        margin-top: 0.2rem;
+        margin-left: 0.5rem;
+        background: #fff;
+        border-radius:8px ;
+    li{
+        margin-left: 0.2rem;
+        width: 95%;
+        height: 25%;
+       
+    }
+    li:nth-of-type(3){
+         box-sizing: border-box;
+         border-top:1px solid #D7D7D7;
+         border-bottom:1px solid #D7D7D7;
+           input{
+             @include shuru;
+          width: 100%;
+          height: 100%;
+          color: #9D9D9D;
+          font-size: 20px;
+        }
+    }
+     li:nth-of-type(1){
+         position: relative;
+         span{
+             color: #7B7B7B;
+          font-size: 20px;
+        }
+        input{
+             @include shuru;
+          width: 36px;
+          height: 36px;
+          color: #7B7B7B;
+          font-size: 20px;
+        }
+        div{
+            position: absolute;
+            top: 5px;
+            left: 45%;
+              color: #7B7B7B;
+          font-size: 18px;
+          span{
+               color:#3EA1BD ;
+          }
+        }
+        div:nth-of-type(2){
+            left: 63%;
+             span{
+               color: #4DDC28;
+          }
+        }
+        div:nth-of-type(3){
+            left: 80%;
+            span{
+               color: #E0297B;
+          }
+        }
+       
+      
+       
+    }
+    
+     li:nth-of-type(2){
+         input{
+             @include shuru;
+          width: 100%;
+          height: 100%;
+          color: #9D9D9D;
+          font-size: 20px;
+        }
+    }
+}
+
+}
+
+.jiantou{
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    color: #fff;
+    font-size: 0.3rem;
+    margin-left: -12px; 
+    z-index: 222;
+    display: none;
+}
+
+.add{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    color: #D92974;
+    font-size: 1rem;
+    margin-left: -25px;
+}
+
+
+
+
+
+
+
+
+
+
+

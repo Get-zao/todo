@@ -1,0 +1,193 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+ul, li {
+  list-style: none; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 14px;
+  background: #37AFBF;
+  font-family: "苹方"; }
+
+.icon {
+  font-family: "iconfont" !important; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 56.53333px; } }
+
+.heard {
+  width: 100%;
+  height: 1rem;
+  border-bottom: 1px dashed #999;
+  position: relative;
+  line-height: 1rem; }
+  .heard span {
+    font-size: 0.5rem;
+    color: #fff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+  .heard span:nth-of-type(1) {
+    float: left; }
+  .heard span:nth-of-type(2) {
+    float: right; }
+  .heard .jiantou-s {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 0.1rem; }
+    .heard .jiantou-s span {
+      color: #FFF;
+      font-size: 0.2rem;
+      transform: rotate(180deg); }
+  .heard .zhuangtai {
+    display: none;
+    width: 2rem;
+    height: 3rem;
+    color: #fff;
+    position: absolute;
+    top: 85%;
+    left: 0.3rem;
+    border-radius: 5px;
+    background: #fff; }
+    .heard .zhuangtai li {
+      margin-left: 0.2rem;
+      width: 80%;
+      height: 25%;
+      border-bottom: 1px dashed #37AFBF; }
+      .heard .zhuangtai li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 34px;
+        text-decoration: none;
+        color: #888; }
+    .heard .zhuangtai .last {
+      border: 0; }
+
+.date {
+  margin-top: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: #fff;
+  font-size: 0.5rem; }
+  .date span {
+    font-size: 0.5rem;
+    color: #fff; }
+  .date input {
+    padding-left: 0.2rem;
+    background: rgba(0, 0, 0, 0.001);
+    outline: none;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 0.5rem; }
+  .date input:nth-of-type(1) {
+    width: 70px; }
+
+.tanchuang {
+  position: fixed;
+  bottom: 1.3rem;
+  left: 1%;
+  z-index: 222;
+  display: none; }
+  .tanchuang ul {
+    height: 3rem;
+    width: 110%;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+    background: #fff;
+    border-radius: 8px; }
+    .tanchuang ul li {
+      margin-left: 0.2rem;
+      width: 95%;
+      height: 25%; }
+    .tanchuang ul li:nth-of-type(3) {
+      box-sizing: border-box;
+      border-top: 1px solid #D7D7D7;
+      border-bottom: 1px solid #D7D7D7; }
+      .tanchuang ul li:nth-of-type(3) input {
+        padding-left: 0.2rem;
+        background: rgba(0, 0, 0, 0.001);
+        outline: none;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        color: #9D9D9D;
+        font-size: 20px; }
+    .tanchuang ul li:nth-of-type(1) {
+      position: relative; }
+      .tanchuang ul li:nth-of-type(1) span {
+        color: #7B7B7B;
+        font-size: 20px; }
+      .tanchuang ul li:nth-of-type(1) input {
+        padding-left: 0.2rem;
+        background: rgba(0, 0, 0, 0.001);
+        outline: none;
+        box-sizing: border-box;
+        width: 36px;
+        height: 36px;
+        color: #7B7B7B;
+        font-size: 20px; }
+      .tanchuang ul li:nth-of-type(1) div {
+        position: absolute;
+        top: 5px;
+        left: 45%;
+        color: #7B7B7B;
+        font-size: 18px; }
+        .tanchuang ul li:nth-of-type(1) div span {
+          color: #3EA1BD; }
+      .tanchuang ul li:nth-of-type(1) div:nth-of-type(2) {
+        left: 63%; }
+        .tanchuang ul li:nth-of-type(1) div:nth-of-type(2) span {
+          color: #4DDC28; }
+      .tanchuang ul li:nth-of-type(1) div:nth-of-type(3) {
+        left: 80%; }
+        .tanchuang ul li:nth-of-type(1) div:nth-of-type(3) span {
+          color: #E0297B; }
+    .tanchuang ul li:nth-of-type(2) input {
+      padding-left: 0.2rem;
+      background: rgba(0, 0, 0, 0.001);
+      outline: none;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      color: #9D9D9D;
+      font-size: 20px; }
+
+.jiantou {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  color: #fff;
+  font-size: 0.3rem;
+  margin-left: -12px;
+  z-index: 222;
+  display: none; }
+
+.add {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  color: #D92974;
+  font-size: 1rem;
+  margin-left: -25px; }
