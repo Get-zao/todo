@@ -120,11 +120,20 @@ body {
   margin-bottom: 10px;
 }
 
+.ul li h1{
+	color: #fff;
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding-left: 10px;
+}
+
 .ul li .content {
-  line-height: 1rem;
+  /*line-height: 1rem;*/
   color: #fff;
   position: absolute;
-  top: 0;
+  top: 0.5rem;
   bottom: 0;
   margin: auto;
   padding-left: 10px;

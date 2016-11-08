@@ -44,7 +44,7 @@ $(document).ready(function(){
             state:0
         }
         todo.push(todos);
-        localStorage.x=JSON.stringify(todos);
+        localStorage.x=JSON.stringify(todo);
         $("<li><div class='content'>"+v+"</div><div class='delete'>x</div></li>").appendTo(ul);
         input.val("");
         $(".header").removeClass("tuichu_active");
@@ -94,7 +94,6 @@ $(document).ready(function(){
         var m=li.index();
         var n=li.length;
         ul.find('.done').remove();
-//      todo.splice(m,1)
          todo.splice(m,n)
         localStorage.x=JSON.stringify(todo);
     });
