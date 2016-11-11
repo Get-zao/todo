@@ -83,19 +83,10 @@ $(document).ready(function(){
         var li=ul.find('li');
         var m=li.index();
         var n=li.length;
-        ul.find('li').remove();
+        ul.find(' .done').remove();
          todo.splice(m,n)
         localStorage.x=JSON.stringify(todo);
         $(".qita").removeClass("qita_active");
-    });
-
-     $('.delall').on('touchend',function(e){
-        var li=ul.find('li');
-        var m=li.index();
-        var n=li.length;
-        ul.find('.done').remove();
-         todo.splice(m,n)
-        localStorage.x=JSON.stringify(todo);
     });
 	
 	 var divs=$(".zhuangtai li");
