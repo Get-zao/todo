@@ -185,9 +185,9 @@ body {
   display: none; }
   .tanchuang ul {
     height: 3rem;
-    width: 110%;
+    width: 120%;
     margin-top: 0.2rem;
-    margin-left: 0.15rem;
+    margin-left: 10%;
     background: #fff;
     border-radius: 8px; }
     .tanchuang ul li {
