@@ -60,7 +60,7 @@ body {
       transform: rotate(180deg); }
   .heard .zhuangtai {
     display: none;
-    width: 2rem;
+    width: 2.5rem;
     height: 3rem;
     color: #fff;
     position: absolute;
@@ -187,7 +187,7 @@ body {
     height: 3rem;
     width: 110%;
     margin-top: 0.2rem;
-    margin-left: 0.5rem;
+    margin-left: 0.15rem;
     background: #fff;
     border-radius: 8px; }
     .tanchuang ul li {
